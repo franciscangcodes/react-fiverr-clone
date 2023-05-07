@@ -1,6 +1,6 @@
 import React from 'react'
 import './Gig.scss'
-import { Slider } from 'infinite-react-carousel/lib'
+// import { Slider } from 'infinite-react-carousel/lib'
 
 export default function Gig() {
   return (
