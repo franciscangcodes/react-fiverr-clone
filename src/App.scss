@@ -1,0 +1,16 @@
+@import './assets/styling/Mixins.scss';
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

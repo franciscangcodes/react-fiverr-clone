@@ -1,0 +1,48 @@
+@import '../../assets/styling/Mixins.scss';
+
+.explore {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    h2 {
+        margin-top: 100px;
+        @include text-3xl
+    }
+    .container {
+        max-width: 1400px;
+        .marketplace {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            .item {
+                text-decoration: none;
+                color: inherit;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                width: 300px;
+                margin: 50px 0;
+                &:hover {
+                    span {
+                        width: 70px;
+                    }
+                }
+                span {
+                    display: inline-block;
+                    width: 50px;
+                    background-color: #a1f4c0;
+                    height: 2px;
+                    margin: 5px 0 10px 0;
+                    transition: .2s ease-in-out;
+                }
+                p {
+                    @include text-base;
+                }
+            }
+        }
+    }
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}

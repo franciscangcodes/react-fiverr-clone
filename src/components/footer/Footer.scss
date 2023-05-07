@@ -1,0 +1,74 @@
+@import '../../assets/styling/Mixins.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    color: #999;
+    margin: 50px 0;
+    img {
+        width: 24px;
+        height: 24px;
+    }
+    .container {
+        width: 1400px;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            .item {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h2 {
+                    @include text-base;
+                    color: #555;
+                }
+                span {
+                    font-weight: 300;
+                    cursor: pointer;
+                }
+                a {
+                    display: block;
+                    @include text-sm;
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+        hr {
+            margin: 50px 0;
+            height: 0;
+            border: 1px solid #ebebeb;
+        }
+        .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                span {
+                    color: #d3d3d3;
+                }
+                h3 {
+                    @include text-sm;
+                }
+            }
+            .right {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                .social {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+                .link {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
